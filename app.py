@@ -534,7 +534,7 @@ def create_sammary1(pdf_id):
         response = openai.Completion.create(
             engine="text-davinci-002",
             prompt=f"Context: {context}\nQuestion: {question}\nAnswer:",
-            max_tokens=50
+            max_tokens=150
         )
         _id = str(ObjectId())
         
@@ -620,7 +620,7 @@ def create_sammary():
         response = openai.Completion.create(
             engine="text-davinci-002",
             prompt=f"Context: {context}\nQuestion: {question}\nAnswer:",
-            max_tokens=50
+            max_tokens=150
         )
         answer = response.choices[0].text.strip()
         answer1 = f'{context[:25]}...'
