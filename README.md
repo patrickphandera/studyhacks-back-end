@@ -13,7 +13,7 @@ Before you begin, ensure you have met the following requirements:
 ## Clone the Repository
 
 ```bash
-  $ git clone https://github.com/yourusername/studyhacks-back-end.git
+  $ git clone https://github.com/Sam-Banankhu/studyhacks-back-end.git
   $ cd studyhacks-back-end
 ```
 ## Virtual Environment (Optional but recommended)
