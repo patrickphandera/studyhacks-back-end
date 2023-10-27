@@ -22,7 +22,7 @@ def create_sammary1(pdf_id):
         user_id=res["id"]
         document = content_collection.find_one({"_id": pdf_id})
         context = document['extracted_text']
-        question = "Create me a summary"
+        question = "Create me a complehensive  summary of the content"
         _id = str(ObjectId())
         response = openai.Completion.create(
             engine="text-davinci-002",
